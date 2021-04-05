@@ -1,0 +1,242 @@
+.privilege-container {
+    margin-bottom: 153px;
+}
+
+
+.privilege-intro {
+    max-width: 100%;
+    background-color: #2C343E;
+    border-radius: $b-radius;
+    max-height: 577px;
+    padding: 99px 370px 318px 370px;
+    text-align: center;
+}
+
+.privilege-intro__header {
+    font-size: 40px;
+    font-family: $font-fraunces;
+    font-weight: $fraunces-weight;
+    color: $text-color;
+    margin-bottom: 32px;
+
+}
+
+
+.privilege-intro__description {
+    color: $text-color;
+}
+
+
+.privilege-list {
+    display: flex;
+    align-items: center;
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-top: -232px;
+    margin-bottom: 144px;
+}
+
+
+.privilege-item {
+    position: relative;
+    max-width: 350px;
+    background-color: #0e8784;
+    margin-right: 30px;
+    text-align: center;
+    border-radius: $b-radius;
+}
+
+
+.privilege-item:last-child {
+    margin-right: none;
+}
+
+
+.privilege-item::before {
+    content: '';
+    width: 72px;
+    height: 72px;
+    display: block;
+    background: url(/img/coffee-bean.svg) no-repeat;
+    margin: 72px 142.5px 56px 135.5px;
+}
+
+
+.privilege-item:nth-child(2):before {
+    content: '';
+    width: 72px;
+    height: 72px;
+    display: block;
+    background: url(/img/gift-box.svg) no-repeat;
+    margin: 72px 143px 56px 135px;
+}
+
+
+.privilege-item:nth-child(3):before {
+    content: '';
+    width: 72px;
+    height: 50px;
+    display: block;
+    background: url(/img/delivery-car.svg) no-repeat;
+    margin: 83px 142px 67px 136px;
+}
+
+
+.privilege-item__header {
+    font-size: $products-item-header;
+    line-height: $products-item-header-lh;
+    color: $text-color;
+    margin-bottom: 24px;
+    font-family: $font-fraunces;
+}
+
+
+.privilege-item__description {
+    padding: 0 48px 48px 47px;
+    color: $text-color
+}
+
+
+@media screen and (max-width: 1280px) {
+    .privilege-list {
+        flex-direction: column;
+        margin-top: -298px;
+    }
+
+    .privilege-intro {
+        max-width: 100%;
+        padding: 56px 74px 368px 74px;
+    }
+
+
+    .privilege-item {
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        margin-right: 0;
+        margin-bottom: 24px;
+        max-width: 573px;
+    }
+
+
+    .privilege-item::before {
+        margin: 42px 55px 82px 70px;
+        display: inline-block;
+    }
+
+
+    .privilege-item:nth-child(2)::before {
+        margin: 42px 55px 82px 70px;
+        display: inline-block;
+    }
+
+
+    .privilege-item:nth-child(3)::before {
+        margin: 71px 55px 70px 70px;
+        display: inline-block;
+    }
+
+
+    .privilege-item:nth-child(3) {
+        margin-bottom: 0;
+    }
+
+
+    .privilege-item__container {
+        padding: 0;
+        max-width: 344px;
+        margin-top: 21px;
+        text-align: left;
+    }
+
+
+    .box-container {
+        margin-top: 41px;
+    }
+
+
+    .delivery-container {
+        margin-top: 41px;
+    }
+
+
+
+    .privilege-item__description {
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 715px) {
+    .privilege-container{
+        max-width: 100%;
+    }
+
+
+    .privilege-list{
+        margin-top: -597px;
+    }
+
+
+    .privilege-intro{
+        background: linear-gradient(to top, #282F38 66%, #2C343E 34px);
+        max-width: 100%;
+        padding: 64px 24px 810px 24px;
+        
+    }
+
+
+    .privilege-item:first-child{
+        margin-top: 64px;
+    }
+
+
+    .privilege-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .privilege-item::before {
+        margin: 72px 103.5px 56px 103.5px;
+        display: inline-block;
+    }
+
+
+    .privilege-item:nth-child(2)::before {
+        margin: 72px 103px 56px 104px;
+        display: inline-block;
+    }
+
+
+    .privilege-item:nth-child(3)::before {
+        margin: 83px 103px 67px 103px;
+        display: inline-block;
+    }
+
+
+    .privilege-item__container {
+        max-width: 255px;
+        margin-top: 0;
+        text-align: center;
+        margin: 0 12px 48px 12px;
+    }
+
+
+    .privilege-intro__header{
+        font-size: 28px;
+    }
+
+
+    .privilege-intro__description{
+        font-size: 15px;
+        max-width: 279px;
+    }
+
+
+    .privilege-item__description {
+        font-size: 16px;
+        margin-right: 20px;
+        margin-left: 23px;
+    }
+}

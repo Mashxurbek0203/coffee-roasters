@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Fraunces 9pt';
+    src: url('Fraunces9pt-Bold.woff2') format('woff2'),
+        url('Fraunces9pt-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

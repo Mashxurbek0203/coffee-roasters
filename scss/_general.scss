@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+a
+{
+    text-decoration: none;
+}
+
+
+li
+{
+    list-style: none;
+}
+
+
+.nav-list
+{
+    display: flex;
+    list-style: none;
+}
+
+
+@import "./mixins" ;
+
+.nav-link {
+    // font-size: 12px;
+    // line-height: 15px;
+    // font-weight: bold;
+    // font-family: 'Barlow';
+    // color: #83888f;
+    @include nav-link;
+    transition-duration: 0.25s;
+    &:hover{
+        color: #333D4B;
+    }
+}
+
+.main-link {
+    @include main-link;
+    transition-duration: 0.8s;
+    &:hover
+    {
+        background-color: #66D2CF;
+    }
+
+
+    &:active
+    {
+        transition-duration: 0.2s;
+        background-color: #E2DEDB;
+    }
+}
+
+
+@media screen and (max-width: 1280px){
+    *,
+*::before,
+*::after,
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+}
+
+
+.description
+{
+    @include description
+}

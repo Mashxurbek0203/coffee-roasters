@@ -1,0 +1,183 @@
+.procedure-container
+{
+    max-width: 1045px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+
+.procedure-container__header
+{
+    font-size: $header-size;
+    font-family: $font-fraunces;
+    font-weight: $fraunces-weight;
+    color: #83888F;
+}
+
+
+.procedure__span-container
+{
+    margin-top: 80px;
+    display: flex;
+    position: relative;
+    margin-bottom: 67px;
+}
+
+
+.procedure-container__line
+{
+    position: relative;
+    z-index: 1;
+    width: 349px;
+    height: 0;
+    margin: auto 0;
+    display: block;
+    border: 1px solid #FDD6BA;
+}
+
+
+.procedure-container__circle
+{
+    width: 31px;
+    height: 31px;
+    border: 1px solid #0e8784;
+    border-radius: 50%;
+    display: block;
+    background-color: #fff;
+    z-index: 6;
+}
+
+
+.procedure-container__circle:last-child
+{
+    margin-right: 0;
+}
+
+
+.procedure-list
+{
+    display: flex;
+    margin-bottom: 79px;
+}
+
+
+.procedure-item
+{
+    max-width: 285px;
+    margin-right: $work-item-distance;
+}
+
+
+.procedure-item:first-child:before
+{
+    content: '01';
+    font-size: 72px;
+    display: block;
+    color: $work-item-color;
+    font-family: $font-fraunces;
+    font-weight: $fraunces-weight;
+    margin-bottom: 38px;
+}
+
+
+.procedure-item:nth-child(2):before
+{
+    content: '02';
+    font-size: 72px;
+    display: block;
+    color: $work-item-color;
+    font-family: $font-fraunces;
+    font-weight: $fraunces-weight;
+    margin-bottom: 38px;
+}
+.procedure-item:nth-child(3)::before
+{
+    content: '03';
+    font-size: 72px;
+    display: block;
+    color: $work-item-color;
+    font-family: $font-fraunces;
+    font-weight: $fraunces-weight;
+    margin-bottom: 38px;
+}
+
+
+.procedure-item__header
+{
+    font-size: $work-item-header;
+    line-height: $work-item-header-h;
+    font-family: $font-fraunces;
+    font-weight: $fraunces-weight;
+    max-width: 255px;
+    margin-bottom: 42px;
+}
+
+
+@media screen and (max-width: 1280px){
+    .procedure-item{
+        margin-right: $tab-procedure-distance;
+    }
+
+
+    .procedure-item:last-child{
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 715px){
+    .procedure__span-container{
+        display: none;
+    }
+
+
+    .procedure-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 120px;
+    }
+
+
+    .procedure-list{
+        flex-direction: column;
+        margin-top: 79px;
+    }
+
+    .procedure-item{
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 56px;
+    }
+
+
+    .procedure-item:last-child{
+        margin-bottom: 0;
+        max-width: 327px;
+        text-align: center;
+    }
+
+
+    .procedure-item__header{
+        max-width: 327px;
+        font-size: 28px;
+    }
+
+
+    .procedure-item:first-child:before{
+        margin-bottom: 24px;
+    }
+
+
+    .procedure-item:nth-child(2):before{
+        margin-bottom: 24px;
+    }
+
+
+    .procedure-item:nth-child(3):before{
+        margin-bottom: 79px;
+    }
+}
